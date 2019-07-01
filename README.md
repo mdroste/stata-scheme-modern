@@ -10,7 +10,7 @@ stata-scheme-modern
 
 Pretty graphical schemes to replace Stata defaults
 
-`version 0.5 1jul2019`
+`version 1.0 1jul2019`
 
 
 Overview
@@ -27,7 +27,7 @@ Installing and using these schemes is straightforward.
 1. Install both packages from this GitHub repository by typing the following command at the command line:
 
 ```stata
-net install stata-scheme-modern, from("https://raw.githubusercontent.com/mdroste/stata-scheme-modern/master/")
+net install scheme-modern, from("https://raw.githubusercontent.com/mdroste/stata-scheme-modern/master/")
 ```
 
 2. To use the light-colored theme, simply type:
