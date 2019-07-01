@@ -1,0 +1,4 @@
+
+v 0.5
+d Michael Droste, thedroste@gmail.com
+p 'scheme-modern': pretty schemes for stata

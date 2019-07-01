@@ -22,15 +22,23 @@ Stata's default graphics don't look that good. This program provides two replace
 Installation
 ---------------------------------
 
-Installing these schemes is straightforward.
+Installing and using these schemes is straightforward.
 
-1. The most recent version can be installed from Github with the following Stata command:
+1. Install both packages from this GitHub repository by typing the following command at the command line:
 
 ```stata
 net install stata-scheme-modern, from("https://raw.githubusercontent.com/mdroste/stata-scheme-modern/master/")
 ```
 
-2. A ZIP containing the program can be downloaded and manually placed on the user's adopath from Github.
+2. To use the light-colored theme, simply type:
+```stata
+set scheme modern, perm
+```
+
+3. To use the dark-colored theme instead, simply type:
+```stata
+set scheme modern_dark, perm
+```
 
 
 Screenshots

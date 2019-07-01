@@ -1,0 +1,8 @@
+v 1.0
+d
+d 'scheme-modern': pretty stata schemes for stata
+d
+d Distribution-Date: 20190701
+d
+f scheme-modern.scheme
+f scheme-modern_dark.scheme
