@@ -1,0 +1,238 @@
+* ===============================================================================
+* FILE: scheme-modern
+* PURPOSE: Pretty graphing scheme for Stata
+* VERSION: 1.0
+* MORE INFO: https://github.com/mdroste/stata-scheme-modern
+* ===============================================================================
+
+#include s2color
+
+* -------------------------------------------------------------------------------
+* Legend options
+* -------------------------------------------------------------------------------
+
+* Default position
+clockdir legend_position     4
+
+* Number of columns
+numstyle legend_cols         1
+
+* Number of rows (0 = just want keys enumerated in one column)
+numstyle legend_rows         0
+
+* Legend key size
+gsize legend_key_xsize       5
+
+* XX
+yesno legend_col_first       no
+yesno legend_row_first       yes
+
+* -------------------------------------------------------------------------------
+* Graph size and margin options
+* -------------------------------------------------------------------------------
+
+margin axis_title small
+
+graphsize x 6
+
+gsize                 		medsmall
+gsize gap             		tiny
+gsize text            		medsmall
+gsize body            		medsmall
+gsize title					medlarge
+gsize small_body      		small
+gsize heading         		medium
+gsize subheading      		medsmall
+gsize axis_title      		medsmall
+gsize matrix_label    		large
+gsize label           		medsmall     
+gsize small_label     		small     
+gsize matrix_marklbl  		small     
+gsize key_label       		small     
+gsize note            		small
+gsize star            		medsmall
+gsize text_option     		medsmall     
+gsize dot_rectangle   		third_tiny
+gsize axis_space      		half_tiny
+gsize axis_title_gap  		minuscule
+gsize tick            		tiny
+gsize minortick       		half_tiny
+gsize tickgap         		half_tiny
+gsize notickgap       		tiny
+gsize tick_label      		small
+gsize tick_biglabel   		medsmall
+gsize minortick_label 		vsmall
+gsize filled_text     		medsmall
+gsize reverse_big     		large
+gsize alternate_gap   		zero
+gsize title_gap       		vsmall
+gsize key_gap         		vsmall
+gsize key_linespace   		vsmall
+gsize star_gap        		minuscule
+gsize label_gap       		half_tiny
+gsize matrix_mlblgap  		half_tiny
+gsize barlabel_gap    		tiny
+
+gsize legend_colgap   		vsmall
+gsize legend_row_gap    	tiny
+gsize legend_key_gap    	vsmall
+gsize legend_key_ysize  	vsmall
+
+gsize zyx2legend_key_gap    tiny
+gsize zyx2legend_key_xsize  vhuge
+gsize zyx2rowgap            zero
+
+gsize sts_risktable_space 	third_tiny
+gsize sts_risktable_tgap  	zero
+gsize sts_risktable_lgap  	zero
+gsize sts_risk_label      	medsmall
+gsize sts_risk_title      	medsmall
+gsize sts_risk_tick       	zero
+
+linestyle  legend			none
+linestyle  plotregion		none
+anglestyle vertical_tick	horizontal
+
+linewidth xyline       		medthin
+linewidth histogram    		vthin
+linewidth bar          		vthin
+
+linewidth p                 medium
+linewidth axisline          medthin
+linewidth tick              thin
+linewidth minortick         thin
+linewidth background        thin
+linewidth foreground        thin
+linewidth major_grid        thin
+linewidth minor_grid        thin
+linewidth refmarker         vthin
+linewidth matrixmark        vthin
+linewidth dots              thin
+linewidth dot_line          thin
+linewidth dot_area          thin
+linewidth dotmark           thin
+linewidth plotregion        vthin
+linewidth legend            vthin
+linewidth pie               vthin
+linewidth reverse_big       vthin
+linewidth sunflower         vthin
+linewidth matrix_plotregion vthin
+linewidth text_option       vthin
+linewidth ci                thin
+linewidth ci2               thin
+linewidth ci_area           thin
+linewidth ci2_area          thin
+linewidth pbar              thin
+linewidth p1bar             thin
+linewidth p2bar             thin
+linewidth p3bar             thin
+linewidth p4bar             thin
+linewidth p5bar             thin
+linewidth p6bar             thin
+linewidth p7bar             thin
+linewidth p8bar             thin
+linewidth p9bar             thin
+linewidth p10bar            thin
+linewidth p11bar            thin
+linewidth p12bar            thin
+linewidth p13bar            thin
+linewidth p14bar            thin
+linewidth p15bar            thin
+
+linewidth small 			small
+linewidth histogram    		thin
+linewidth bar          		thin
+
+linewidth refline      		medthin
+
+symbolsize         			small
+symbolsize p       			small
+
+linepattern xyline      	shortdash 	
+linepattern ci          	dash
+linepattern ci_area     	solid
+
+linepattern grid        	dot
+linepattern major_grid  	dot
+linepattern minor_grid  	dot
+
+* -------------------------------------------------------------------------------
+* Color options
+* -------------------------------------------------------------------------------
+
+* White background for all plots
+color background             white
+
+* Colors for grid lines and stuff
+color xyline 				gs7
+color tick         			gs9
+color minortick    			gs9
+color grid                  gs9
+color major_grid            gs9
+color minor_grid            gs9
+color axisline     			gs8
+color matrix         		gs6    
+color matrixmarkline 		gs6    
+color refmarker      		gs11
+color refmarkline    		black
+
+* Default colors for all other non-specified objects, first one should be 31 88 137
+color p1					"31 88 137"
+color p2					"155 52 58"
+color p3					"94 130 50"
+color p4					dkorange
+color p5					teal
+color p6					cranberry
+color p7					lavender
+color p8					khaki
+color p9					sienna
+color p10					emidblue
+color p11					emerald
+color p12					brown
+color p13					erose
+color p14					gold
+color p15					bluishgray
+
+* Fade out bar charts and histograms into lighter palette 
+intensity bar 				80
+intensity histogram         80
+
+* Confidence intervals
+intensity ci_area    		inten30
+color ci_area               gs4%50
+color ci_arealine           gs4%0
+
+opacity   bar               50
+
+* -------------------------------------------------------------------------------
+* Gridline options
+* -------------------------------------------------------------------------------
+
+yesno draw_major_grid       	no
+yesno draw_minor_grid       	no
+yesno draw_majornl_grid     	no
+yesno draw_minornl_grid     	no
+yesno draw_major_hgrid      	yes
+yesno draw_minor_hgrid      	no
+yesno draw_majornl_hgrid    	no
+yesno draw_minornl_hgrid    	no
+yesno draw_major_vgrid      	yes
+yesno draw_minor_vgrid      	no
+yesno draw_majornl_vgrid    	no
+yesno draw_minornl_vgrid    	no
+yesno draw_major_nl_vgrid   	no
+yesno draw_minor_nl_vgrid   	no
+yesno draw_majornl_nl_vgrid 	no
+yesno draw_minornl_nl_vgrid 	no
+yesno draw_major_nl_hgrid   	no
+yesno draw_minor_nl_hgrid   	no
+yesno draw_majornl_nl_hgrid 	no
+yesno draw_minornl_nl_hgrid 	no
+
+yesno grid_draw_min          	yes
+yesno grid_draw_max          	yes
+
+yesno extend_axes_low       	yes
+yesno extend_axes_high      	yes
+yesno extend_axes_full_low  	yes
+yesno extend_axes_full_high 	yes
