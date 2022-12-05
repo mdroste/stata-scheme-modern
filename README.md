@@ -16,7 +16,7 @@ Pretty graphical schemes to replace Stata defaults
 Overview
 ---------------------------------
 
-Stata's default graphics don't look that good. This program provides two replacement schemes that look better. You can check out some pictures of what these schemes look like in the [Screenshots](#screenshots) section below. Note that these scheme options - for instance, placing the content of legends outside the graph region - can always be overrided. The purpose of these schemes is to provide default options that are closer to what you might want and look better out of the box.
+This package provides graphical themes for Stata that are intended to align with more common graphical themes in other languages (e.g. matplotlib). You can check out some pictures of what these schemes look like in the [Screenshots](#screenshots) section below. Note that these scheme options - for instance, placing the content of legends outside the graph region - can always be overrided. The purpose of these schemes is to provide default options that are closer to what you might want and look better out of the box.
 
 
 Installation
@@ -103,4 +103,4 @@ Acknowledgements
 
 These schemes were built by combining elements from two existing schemes: (1) the leap-slides used by the Opportunity Insights research group from 2015 to present; (2) the [cleanplots](https://www.trentonmize.com/software/cleanplots) scheme produced by Trenton D. Mize.
 
-Interested users might also like to check out other work; for instance, the [grstyle](https://boris.unibe.ch/117391/1/grstyle-Konstanz-2018.pdf) command by Ben Jann.
+Interested users might also like to check out other work; for instance, the [grstyle](https://boris.unibe.ch/117391/1/grstyle-Konstanz-2018.pdf) command by Ben Jann, or [brewscheme](https://github.com/wbuchanan/brewscheme) by William Buchanan.
