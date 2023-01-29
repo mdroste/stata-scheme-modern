@@ -4,8 +4,6 @@ stata-scheme-modern
 [Overview](#overview)
 | [Installation](#installation)
 | [Screenshots](#screenshots)
-| [Benchmarks](#benchmarks)
-| [To-Do](#todo)
 | [Acknowledgements](#acknowledgements)
 
 Pretty graphical schemes to replace Stata defaults
@@ -16,7 +14,7 @@ Pretty graphical schemes to replace Stata defaults
 Overview
 ---------------------------------
 
-This package provides graphical themes for Stata that are intended to align with more common graphical themes in other languages (e.g. matplotlib). You can check out some pictures of what these schemes look like in the [Screenshots](#screenshots) section below. Note that these scheme options - for instance, placing the content of legends outside the graph region - can always be overrided. The purpose of these schemes is to provide default options that are closer to what you might want and look better out of the box.
+This package provides graphical themes for Stata that are intended to align with more common graphical themes in other languages (e.g. matplotlib). You can check out some pictures of what these schemes look like in the [Screenshots](#screenshots) section below. Note that these scheme options - for instance, placing the content of legends outside the graph region - can always be overrided. The purpose of these schemes is to provide default options that are closer to what you might want *out of the box*.
 
 
 Installation
