@@ -6,7 +6,7 @@ stata-scheme-modern
 | [Screenshots](#screenshots)
 | [Acknowledgements](#acknowledgements)
 
-Pretty graphical schemes to replace Stata defaults
+Better Stata graphical schemes
 
 `version 1.0 1jul2019`
 
@@ -14,15 +14,15 @@ Pretty graphical schemes to replace Stata defaults
 Overview
 ---------------------------------
 
-This package provides graphical themes for Stata that are intended to align with more common graphical themes in other languages (e.g. matplotlib). You can check out some pictures of what these schemes look like in the [Screenshots](#screenshots) section below. Note that these scheme options - for instance, placing the content of legends outside the graph region - can always be overrided. The purpose of these schemes is to provide default options that are closer to what you might want *out of the box*.
+This package provides graphical themes (schemes) for Stata that are intended to imitate defaults from popular plotting libraries in other languages (e.g. matplotlib). You can check out some pictures of what these schemes look like in the [Screenshots](#screenshots) section below. As always, scheme settings (e.g. legend placement, color options) can always be overridden.
 
 
 Installation
 ---------------------------------
 
-Installing and using these schemes is straightforward.
+Installation is straightforward:
 
-1. Install both packages from this GitHub repository by typing the following command at the command line:
+1. Install this package directly from this GitHub repo by typing the following command in a Stata prompt:
 
 ```stata
 net install scheme-modern, from("https://raw.githubusercontent.com/mdroste/stata-scheme-modern/master/")
